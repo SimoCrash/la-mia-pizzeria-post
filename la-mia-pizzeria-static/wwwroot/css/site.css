@@ -17,7 +17,6 @@ body {
   margin-bottom: 60px;
 }
 
-
 /* HEADER */
 
 header {
@@ -34,8 +33,17 @@ header h1, header h2 {
     text-align: center;
 }
 
-/* DETAIL */
 
+/* INDEX */
+.btn-create {
+    margin: 20px;
+}
+
+.btn-create a {
+    text-decoration: none;
+}
+
+/* DETAIL */
 .container-detail {
     width: 500px;
     height: 400px;
@@ -51,6 +59,32 @@ header h1, header h2 {
     width: 300px;
     height: 200px;
 }
+
+
+/* CREATE */
+
+h2 {
+    text-align: center;
+}
+
+.container-form {
+    width: 500px;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: auto;
+}
+
+.container-form input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.container-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
 
 
 

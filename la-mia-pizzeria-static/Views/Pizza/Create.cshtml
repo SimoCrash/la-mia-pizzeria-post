@@ -1,5 +1,31 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model Pizza
+
 @{
+    var pizza = Model;
 }
+
+<h2>Crea una nuova Pizza</h2>
+<div>
+    <div class="container-form">
+        <form method="post" asp-asp-controller="Pizza" asp-action="Create">
+            @Html.AntiForgeryToken()
+            <div>
+                <label for="Nome">Nome</label>
+                <input asp-for="Nome" />
+            </div>
+            <div>
+                <label for="Descrizione">Descrizione</label>
+                <input asp-for="Descrizione" />
+            </div>
+            <div>
+                <label for="Foto">Foto</label>
+                <input asp-for="Foto" />
+            </div>
+            <div>
+                <label for="Prezzo">Prezzo</label>
+                <input asp-for="Prezzo" />
+            </div>
+            <button type="submit">Crea ora!</button>
+        </form>
+    </div>
+</div>
