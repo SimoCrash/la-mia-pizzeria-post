@@ -29,7 +29,10 @@
     </style>
 }
 
-    
+<button>
+    <a href="@Url.Action("Create", "Pizza")">Aggiungi una nuova pizza</a>
+</button>
+
 @if(pizzas.Length == 0)
 {
     <h2>Non ci sono pizze da mostrare</h2>

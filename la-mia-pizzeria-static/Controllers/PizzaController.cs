@@ -25,6 +25,11 @@ namespace la_mia_pizzeria_static.Controllers
             return View(pizza);
         }
 
+        public IActionResult Create()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
