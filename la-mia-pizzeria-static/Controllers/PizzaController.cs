@@ -31,6 +31,7 @@ namespace la_mia_pizzeria_static.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Create(Pizza pizza)
         {
             if(!ModelState.IsValid)
