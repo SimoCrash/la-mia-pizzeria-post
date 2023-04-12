@@ -44,12 +44,12 @@ header h1, header h2 {
     border: 2px solid red;
     border-radius: 5px;
     padding: 50px;
-    box-sizing: content-box;
+    /*box-sizing: content-box;*/
 }
 
 .container-detail-img img {
-    width: 100%;
-    text-align: center;
+    width: 300px;
+    height: 200px;
 }
 
 
