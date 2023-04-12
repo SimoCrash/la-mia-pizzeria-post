@@ -42,7 +42,7 @@ namespace la_mia_pizzeria_static.Controllers
             using var ctx = new PizzeriaContext();
 
             ctx.Pizzas.Add(pizza);
-            ctx.SaveChanges(); //Attenzione dà problemi dopo UpdatesPizzaInModel
+            ctx.SaveChanges(); //Attenzione dà problemi dopo UpdatesPizzaInModel e database update se non inserisci l'img
 
             return RedirectToAction("Index");
         }
