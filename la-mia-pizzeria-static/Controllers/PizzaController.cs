@@ -1,5 +1,6 @@
 ﻿using la_mia_pizzeria_static.Models;
 using Microsoft.AspNetCore.Mvc;
+using static System.Net.WebRequestMethods;
 
 namespace la_mia_pizzeria_static.Controllers
 {
@@ -27,7 +28,11 @@ namespace la_mia_pizzeria_static.Controllers
 
         public IActionResult Create()
         {
-            return View();
+            var pizza = new Pizza
+            {
+                Foto = "https://picsum.photos/200/300",
+            };
+            return View(pizza);
         }
 
         [HttpPost]
